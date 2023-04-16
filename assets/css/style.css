@@ -1,0 +1,128 @@
+:root {
+  /* b-e__m */
+
+  /* Colors */
+  --orange-cafe: #ff902b;
+  --orange-chestnut: #2f2105;
+  --orange-accents: #f9d9aa;
+    --orange-accents_light: #F6EBDA;
+
+
+  --gray-light: #7e7d7a;
+
+  /* Fonts*/
+  --font-primary: "Poppins", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* Works on Firefox */
+  scrollbar-width: thin;
+  scrollbar-color: var(--orange-cafe) var(--orange-accents_light);
+}
+
+html {
+  font-size: 10px;
+  font-family: var(--font-primary);
+}
+
+/* Works on Chrome, Edge, and Safari */
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--orange-accents_light);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--orange-cafe);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

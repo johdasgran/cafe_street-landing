@@ -5,7 +5,12 @@
   --orange-cafe: #ff902b;
   --orange-chestnut: #2f2105;
   --orange-accents: #f9d9aa;
-    --orange-accents_light: #F6EBDA;
+  --orange-accents_light: #F6EBDA;
+
+  --text-dark: #1D1D1D;
+
+  --btn-primary: #fff;
+  --btn-secondary: #F4AE26;
 
 
   --gray-light: #7e7d7a;
@@ -28,6 +33,11 @@ html {
   font-family: var(--font-primary);
 }
 
+body {
+  overflow: hidden;
+  /* overflow-x: hidden; */
+}
+
 /* Works on Chrome, Edge, and Safari */
 body::-webkit-scrollbar {
   width: 1rem;
@@ -43,6 +53,140 @@ body::-webkit-scrollbar-thumb {
 
 
 
+/* Buttons */
+
+.btn__primary {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 600;
+  padding: 1.2rem 3.2rem;
+  border-radius: 3.2rem;
+  text-decoration: none;
+  transition: color .4s ease-in-out;
+  background-color: var(--orange-chestnut);
+  color: #fff;
+}
+
+.btn__primary:hover,
+.btn__primary:active,
+.btn__primary:focus {
+  color: var(--btn-secondary);
+  transition: color .2s ease-in-out;
+}
+
+.btn__primary--icon {
+  padding: 1.2rem 6.4rem 1.2rem 3.2rem;
+}
+
+.btn__secondary {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  padding: .8rem 1.6rem;
+  border-radius: 3.2rem;
+  border: .2rem solid transparent;
+  text-decoration: none;
+  color: #F4AE26;
+  transition: color .4s ease-in;
+}
+
+.btn__secondary:hover,
+.btn__secondary:active,
+.btn__secondary:focus {
+  border: .2rem solid var(--orange-cafe);
+  color: var(--orange-cafe);
+  transition: color .2s ease-in-out;
+}
+
+/* Buttons */
+
+header {
+  background-color: var(--orange-accents_light);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 3.6rem 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+
+
+.header__right {
+  display: flex;
+  place-items: center;
+  gap: 3.2rem;
+}
+
+
+.header__right--nav {
+  margin-right: 11rem;
+}
+
+
+.header__right--nav ul {
+  display: flex;
+  gap: 3.2rem;
+}
+
+.header__right--nav ul li {
+  list-style: none;
+}
+
+.header__right--nav ul li a {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: var(--text-dark);
+  transition: color .2s ease-in;
+}
+
+.header__right--nav ul li a:hover {
+  color: var(--orange-cafe);
+  transition: color .2s ease-in-out;
+}
+
+
+.header__right--search {
+  position: relative;
+}
+
+.icon-search {
+  position: absolute;
+  z-index: 2;
+  left: 1.2rem;
+  top: 0;
+  transform: translateY(50%);
+}
+
+
+.header__right--search input {
+  width: 22.2rem;
+  height: 4rem;
+  background-color: #fff;
+  border: none;
+  outline: none;
+  border-radius: 3.6rem;
+  padding: 1rem 2rem 1rem 5.2rem;
+  filter: drop-shadow(6px 2px 24px rgba(0, 0, 0, 0.13));
+  position: relative;
+}
+
+
+
+
+.header__right--search input::placeholder {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 400;
+  color: #929292;
+}
 
 
 
@@ -51,6 +195,75 @@ body::-webkit-scrollbar-thumb {
 
 
 
+.section__hero {
+  background-color: var(--orange-accents_light);
+  position: relative;
+}
+
+.section__hero::before {
+  content: "";
+  background: url(../images/bg_img_hero.png) no-repeat;
+  position: absolute;
+  top: -14.8rem;
+  right: -8.4rem;
+  width: 59.9rem;
+  height: 39.4rem;
+}
+
+
+.section__hero--container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 8rem 2rem;
+  position: relative;
+}
+
+
+
+.section__hero--left {
+  display: flex;
+  flex-direction: column;
+  place-content: center;
+
+
+}
+
+
+
+.section__hero--left h1 {
+  font-size: 4.8rem;
+  line-height: 7.2rem;
+  font-weight: 600;
+  padding: 0 0 2rem 0;
+  color: var(--orange-chestnut);
+}
+
+.section__hero--left h1 > span {
+  color: var(--orange-cafe);
+}
+
+.section__hero--left p {
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-weight: 400;
+  padding: .8rem 0;
+  color: #7E7D7A;
+}
+
+
+
+
+
+
+.section__hero--left-buttons {
+  display: flex;
+  place-items: center;
+  gap: 2.8rem;
+  padding: 2rem 0;
+}
 
 
 
@@ -59,26 +272,9 @@ body::-webkit-scrollbar-thumb {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.section__hero--right img {
+  max-width: 56rem;
+}
 
 
 

@@ -55,6 +55,28 @@ body::-webkit-scrollbar-thumb {
 
 /* Buttons */
 
+.btn__primary,
+.btn__secondary {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  padding: 1.2rem 3.2rem;
+  border-radius: 3.2rem;
+  text-decoration: none;
+  transition: color .4s ease-in-out;
+}
+
+.btn__primary.btn-sm,
+.btn__secondary.btn-sm {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+  font-weight: 600;
+  padding: .8rem 1.6rem;
+  border-radius: 3.2rem;
+  text-decoration: none;
+}
+
+
 .btn__primary {
   font-size: 14px;
   line-height: 21px;
@@ -79,13 +101,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .btn__secondary {
-  font-size: 1.2rem;
-  line-height: 1.8rem;
-  font-weight: 600;
-  padding: .8rem 1.6rem;
-  border-radius: 3.2rem;
   border: .2rem solid transparent;
-  text-decoration: none;
   color: #F4AE26;
   transition: color .4s ease-in;
 }
@@ -101,6 +117,7 @@ body::-webkit-scrollbar-thumb {
 /* Buttons */
 
 header {
+  display: none;
   background-color: var(--orange-accents_light);
 }
 
@@ -202,6 +219,7 @@ header {
 
 .section__hero::before {
   content: "";
+  display: none;
   background: url(../images/bg_img_hero.png) no-repeat;
   position: absolute;
   top: -14.8rem;
@@ -213,7 +231,8 @@ header {
 
 .section__hero--container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   gap: 4rem;
   max-width: 120rem;
   margin: 0 auto;
@@ -297,14 +316,17 @@ header {
 
 
 
+@media (min-width: 400px) {
+
+
+}
 
 
 
+@media (min-width: 500px) {
 
 
-
-
-
+}
 
 
 

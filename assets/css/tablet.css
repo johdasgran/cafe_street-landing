@@ -1,12 +1,51 @@
 @media (min-width: 768px) {
 
 
+    header {
+        background-color: var(--orange-accents_light);
+      
+      }
+
+
+    .header__left {
+        display: none;
+      }
+      
+      .header__right--nav {
+        display: flex;
+      }
+      
+      
+
+
+
+
+
+    /* Start Hero Section */
+    .section__hero::before {
+        display: flex;
+    }
+
+
+    .section__hero--container {
+        grid-template-columns: 1fr 1fr;
+        gap: 4rem;
+    }
+
+ 
+  
+  /* End Hero Section */
+
 }
 
 
 
 @media (min-width: 991px) {
 
+    .header__right--search {
+        display: flex;
+      }
+      
 
 }
 

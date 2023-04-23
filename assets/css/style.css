@@ -322,6 +322,108 @@ header {
 
 
 
+
+
+
+/* Start Popular Section */
+
+.section__popular {
+  background-color: var(--orange-accents_light);
+}
+
+.section__popular--container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.section__popular--container h2 {
+  font-size: 32px;
+  line-height: 48px;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.section__popular--container h2 > span {
+  position: relative;
+
+}
+
+.section__popular--container h2 > span::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  background-color: var(--orange-cafe);
+  border-radius: 1.2rem;
+  height: .4rem;
+  width: 100%;
+
+}
+
+
+
+.section__popular--cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  padding: 4rem 2rem;
+}
+
+
+.section__popular--card {
+  width: 343px;
+  height: 373px;
+  border-radius: 12px;
+  padding: 2.4rem 1.8rem;
+  background-color: #fff;
+}
+
+
+
+.section__popular--card-picture img {
+  width: 100%;
+  border-radius: 1.2rem;
+  position: relative;
+}
+
+
+
+
+/* End Popular Section */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 375px) {
 
   .header__center a svg {

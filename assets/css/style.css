@@ -104,13 +104,27 @@ body::-webkit-scrollbar-thumb {
 /* Buttons */
 
 header {
-  /* display: none; */
-  /* background-color: var(--orange-accents_light);*/
-  background-color: #fff;
+  background-color: var(--orange-accents_light);
+  height: 8rem;
+}
+
+
+.header { 
+  /* position: relative;
+  z-index: 1; */
+  /* glass */
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 100%, rgba(255, 255, 255, 0.2) 100%); */
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%, rgba(255, 255, 255, 0.4) 100%);
+  backdrop-filter: blur(2rem);
+  filter: drop-shadow(.4rem .4rem 2rem rgba(47, 33, 5, 0.2));
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
 
 }
 
-.header {
+.header__glass {
   display: flex;
   justify-content: space-between;
   place-items: center;
@@ -118,8 +132,6 @@ header {
   margin: 0 auto;
   padding: 2rem 2rem;
   /* padding: 3.6rem 2rem; */
-  position: relative;
-  z-index: 1;
 }
 
 
@@ -139,7 +151,8 @@ header {
 
 .header__right--nav {
   display: none;
-  margin-right: 11rem;
+  /* margin-right: 11rem; */
+  margin-right: 2rem;
 }
 
 
@@ -242,7 +255,8 @@ header {
   gap: 4rem;
   max-width: 120rem;
   margin: 0 auto;
-  padding: 8rem 2rem;
+  padding: 4rem 2rem;
+  /* padding: 8rem 2rem; */
   position: relative;
 }
 

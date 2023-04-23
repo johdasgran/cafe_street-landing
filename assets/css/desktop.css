@@ -1,5 +1,8 @@
 @media (min-width: 1200px) {
-
+    .header__right--nav {
+        margin-right: 11rem;
+      }
+      
 
 }
 

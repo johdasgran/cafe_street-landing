@@ -7,6 +7,9 @@
   --orange-accents: #f9d9aa;
   --orange-accents_light: #F6EBDA;
 
+  --orange-tag: #FFD28F;
+
+
   --text-dark: #1D1D1D;
 
   --btn-primary: #fff;
@@ -388,6 +391,74 @@ header {
 
 
 
+.section__popular--card-info,
+.section__popular--card-footer {
+  display: flex;
+  justify-content: space-between;
+  place-items: center;
+}
+
+
+.section__popular--card-info h3,
+.section__popular--card-info span {
+  font-size: 2.4rem;
+  line-height: 3.6rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--orange-chestnut);
+}
+
+
+.section__popular--card-footer {
+  padding-top: 1.2rem;
+}
+
+
+.section__popular--card-tags {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.section__popular--card-tags span {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-align: center;
+  padding: .4rem 1.6rem;
+  color: var(--orange-tag);
+  border: .2rem solid var(--orange-tag);
+  transition: all .4s ease-in;
+  border-radius: .8rem;
+  cursor: pointer;
+}
+
+
+.section__popular--card-tags span:hover,
+.section__popular--card-tags span:focus,
+.section__popular--card-tags span.section__popular--card-tag-active {
+  color: var(--orange-cafe);
+  border: .2rem solid var(--orange-cafe);
+  transition: all .4s ease-in;
+}
+
+
+
+.section__popular--card-buy {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  width: 4rem;
+  height: 4rem;
+  background-color: var(--orange-cafe);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.section__popular--card-buy svg path {
+  stroke: #fff;
+}
 
 /* End Popular Section */
 

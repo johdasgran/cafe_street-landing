@@ -68,6 +68,7 @@ body::-webkit-scrollbar-thumb {
   border-radius: 3.2rem;
   text-decoration: none;
   transition: color .4s ease-in-out;
+  display: inline-flex;
 }
 
 .btn__primary {
@@ -116,6 +117,7 @@ h2 {
 
 h2 > span {
   position: relative;
+  display: inline-flex;
 }
 
 h2 > span::before {
@@ -622,9 +624,81 @@ header {
 
 
 
+/* Start About Section */
+
+
+.section__about {
+  background-color: var(--orange-accents_light);
+  margin-top: 8rem;
+  position: relative;
+  overflow-x: clip;
+}
+
+.section__abou--bg {
+  position: absolute;
+  top: 3.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  mix-blend-mode:overlay
+} 
+
+.section__about--container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-content: center;
+  place-items: center;
+  gap: 4rem;
+  max-width: 120rem;
+  margin: 0 auto;
+  position: relative;
+}
+
+.section__about--img {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  width: 37.2rem;
+  height: 51rem;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%, rgba(255, 255, 255, 0.4) 100%);
+  border-radius: 1.2rem;
+  position: relative;
+  top: -8rem;
+}
+
+.section__about--img img {
+  width: 36rem;
+  height: 49.8rem;
+  object-fit: cover;
+  border-radius: 1.2rem;
+  position: relative;
+}
+
+.section__about--info {
+  padding-right: 4rem;
+}
+
+.section__about--info h3 {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  padding-top: 2.4rem;
+  color: var(--text-dark);
+}
+
+.section__about--info p {
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  padding: 1.6rem 0 3.2rem;
+  letter-spacing: 0.04em;
+  color: var(--gray-light);
+}
 
 
 
+
+/* End About Section */
 
 
 

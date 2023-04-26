@@ -147,9 +147,11 @@ header {
   z-index: 1; */
   /* glass */
   /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.6) 0%, rgba(255, 255, 255, 0.4) 100%, rgba(255, 255, 255, 0.2) 100%); */
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%, rgba(255, 255, 255, 0.4) 100%);
-  backdrop-filter: blur(2rem);
-  filter: drop-shadow(.4rem .4rem 2rem rgba(47, 33, 5, 0.2));
+  /* background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%, rgba(255, 255, 255, 0.4) 100%);
+  backdrop-filter: blur(2rem); */
+  /* filter: drop-shadow(.4rem .4rem 2rem rgba(47, 33, 5, 0.2)); */
+  background-color: #f6ebda;
+  /* filter: drop-shadow(.4rem .4rem 2rem rgba(47, 33, 5, 0.08)); */
   position: fixed;
   z-index: 9;
   top: 0;
@@ -629,7 +631,7 @@ header {
 
 .section__about {
   background-color: var(--orange-accents_light);
-  margin-top: 8rem;
+  /* margin-top: 8rem; */
   position: relative;
   overflow-x: clip;
 }
@@ -639,22 +641,24 @@ header {
   top: 3.2rem;
   left: 50%;
   transform: translateX(-50%);
-  mix-blend-mode:overlay
+  mix-blend-mode: overlay;
 } 
 
 .section__about--container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  place-content: center;
-  place-items: center;
+  grid-template-columns: 1fr;
+  /* grid-template-columns: repeat(2, 1fr); */
+  /* place-content: center;
+  place-items: center; */
   gap: 4rem;
   max-width: 120rem;
+  padding: 6rem 2rem 8.2rem;
   margin: 0 auto;
   position: relative;
 }
 
 .section__about--img {
-  display: flex;
+  display: none;
   place-content: center;
   place-items: center;
   width: 37.2rem;
@@ -662,7 +666,7 @@ header {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.4) 100%, rgba(255, 255, 255, 0.4) 100%);
   border-radius: 1.2rem;
   position: relative;
-  top: -8rem;
+  /* top: -8rem; */
 }
 
 .section__about--img img {
@@ -775,6 +779,35 @@ header {
 
 
 
+@media (min-width: 700px) {
+
+
+  /* Start About Section */
+
+  .section__about {
+    margin-top: 8rem;
+  }
+
+  .section__about--container {
+    grid-template-columns: repeat(2, 1fr);
+    place-content: center;
+    place-items: center;
+    padding: 1.2rem 2rem;
+  }
+
+  .section__about--img {
+    display: flex;
+    top: -8rem;
+  }
+
+  .section__about--info {
+    padding-right: 0;
+  }
+
+  /* End About Section */
+
+
+}
 
 
 

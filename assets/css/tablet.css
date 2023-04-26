@@ -41,6 +41,26 @@
   
   /* End Hero Section */
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .section__about--container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+
 }
 
 
@@ -60,6 +80,21 @@
     }
     
     /* End Hero Section */
+
+
+
+
+
+
+
+
+    /* Start About Section */
+
+    .section__about--info {
+      padding-right: 4rem;
+    }
+  
+    /* End About Section */
 
 
 }

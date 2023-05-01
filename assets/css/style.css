@@ -513,6 +513,14 @@ header {
 }
 
 
+.section__popular--card-details p {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  color: var(--gray-light);
+}
+
 .section__popular--card-tags {
   display: flex;
   gap: 1.2rem;
@@ -700,9 +708,56 @@ header {
 }
 
 
-
-
 /* End About Section */
+
+
+
+
+/* Start Special Section */
+
+
+.section__special--container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 8rem 2rem;
+}
+
+
+.section__special--cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.2rem;
+  padding: 4rem 4rem 8rem;
+  /* overflow-x: auto;
+  scroll-snap-type: x mandatory; */
+  position: relative;
+  z-index: 3;
+}
+
+.section__special--cards .section__popular--card {
+  filter: drop-shadow(0px 6px 16px rgba(0, 0, 0, 0.16));
+}
+
+.section__special--cards .section__popular--card::before {
+  display: none;
+}
+
+
+
+
+
+
+
+/* End Special Section */
+
+
+
+
+
+
+
+
+
 
 
 

@@ -757,7 +757,17 @@ header {
 
 
 
+/* Start Subscription Section */
 
+
+.section__subscription--container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 2rem 4rem;
+}
+
+
+/* End Subscription Section */
 
 
 
